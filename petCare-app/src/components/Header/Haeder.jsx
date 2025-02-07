@@ -10,7 +10,7 @@ export const Header = () =>{
     return (
         <>
             <section className="container_header">
-                <div>
+                <div className="container_body_header">
                     <Link to={"/"} className="container_logo">
                         <FontAwesomeIcon icon={faPaw} className="Icon_logo"/>
                         <h1 className="content_logo">Pet</h1>
@@ -41,12 +41,12 @@ export const Header = () =>{
                 <ul>
                     <li className="menu_item">
                             <Link to={"/sing-up"} className="Menu_link">
-                                Registrarse
+                            Sign Up
                             </Link>
                     </li>
                     <li className="menu_item">
                             <Link to={"/sing-in"} className="Menu_link">
-                                Iniciar Sesión
+                            Sign In
                             </Link>
                     </li>
                 </ul>

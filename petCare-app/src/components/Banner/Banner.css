@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
     font-family: "Poppins", sans-serif;
 }
 
@@ -16,27 +16,75 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    height: 60vh;
     text-align: center;
     color: white;
 }
 .overlay {
-    padding: 30px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+    padding: 25px;
 }
 .overlay h1{
-    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 56px;
+    text-shadow: -5px 0px 3px black;
+}
+.overlay  p{
+    font-size: 1.8rem;
+    text-shadow: -5px 0px 3px black;
+
 }
 .search-box {
     background: white;
-    padding: 20px;
-    border-radius: 10px;
+    /* padding: 20px; */
+    border-radius: 5px;
     color: black;
-    width: 400px;
+    width: 40%;
+    /* height: 400px; */
 }
-.service-options button,
+/* .search-box form{
+    width: 100%;
+} */
+.pet_selection{
+    background: #F4F5F6;
+    width: 100%;
+    padding: 16px 0px 8px 26px;
+    font-weight: bold;
+    box-sizing: border-box;
+    display: flex;
+    font-size: .8rem;
+}
+.pet_selection label{
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+.pet_selection label input[type="checkbox"] {       
+    appearance: none;
+
+    width: 20px;
+    height: 20px;
+    border: .1px solid #7b7b7b;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    background: #fff;
+}
+.pet_selection label input[type="checkbox"]:checked {
+    background-color: #727272;
+    border-color: #727272;
+}
+
+.pet_selection label input[type="checkbox"]:checked::before {
+    content: "✔";
+    color: white;
+    font-size: 12px; 
+    position: absolute;
+    left: 4px;
+    top: 1px;
+}
+
+/* .service-options button,
 .dog-size button {
     display: block;
     width: 100%;
@@ -56,4 +104,4 @@
 }
 .active {
     background: lightblue;
-}
+} */

@@ -10,17 +10,18 @@ export const Banner = () =>{
     return (
         <>
             <section className="hero_section">
-                <div class="hero">
-                    <div class="overlay">
+                <div className="hero">
+                    <div className="overlay">
                         <h1>Loving pet care in your <br /> neighborhood™</h1>
                         <p>Book trusted sitters and dog walkers.</p>
                     </div>
             
-                    <div class="search-box">
+                    <div className="search-box">
                         <form>
-                            <div class="pet-selection">
-                                <label><input type="checkbox" name="dog"/> Dog</label>
-                                <label><input type="checkbox" name="cat"/> Cat</label>
+                            <div className="pet_selection">
+                                <label>I'm looking for service for my:</label>
+                                <label><input checked className='pet_selection_input' type="checkbox" name="dog"/> Dog</label>
+                                <label><input  className='pet_selection_input' type="checkbox" name="cat"/> Cat</label>
                             </div>
                             
                             <div class="service-options">

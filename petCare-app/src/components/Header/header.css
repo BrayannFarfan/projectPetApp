@@ -9,7 +9,7 @@
     height: 60px    ;
     font-family: "Poppins", sans-serif;
 }
-section div{
+section .container_body_header{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +41,7 @@ section .container_menu {
 .Menu_link{
     text-decoration: none;
     color: #62686e;
+    font-size: .9rem;
 
 }
 .menu_item{
