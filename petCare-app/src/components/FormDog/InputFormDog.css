@@ -1,0 +1,29 @@
+
+
+.service_option {
+    display: flex;
+    justify-content: center;
+  }
+  .services_icon{
+    color: #767676;
+  }
+  .services_btn {
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background: white;
+    width: 130px;
+    text-align: center;
+    color: #767676;
+  }
+  
+  .services_btn:hover,
+  .services_btn.selected {
+    border-color: #1F2124;
+    /* font-weight: bold; */
+  }

@@ -1,11 +1,21 @@
+import { useState } from 'react'
+import { FormCat } from '../FormCat/FormaCat'
+import { FormDog } from '../FormDog/FormDog'
 import './Banner.css'
 
 
 
 export const Banner = () =>{
 
+    const [ checked , setChecked ] = useState('A')
 
 
+    function DogSwitch (){
+        setChecked(checked === 'A' ? null : 'A')
+    }
+    function CatSwitch (){
+        setChecked(checked === 'B' ? null :  'B')
+    }
 
     return (
         <>
@@ -20,38 +30,36 @@ export const Banner = () =>{
                         <form>
                             <div className="pet_selection">
                                 <label>I'm looking for service for my:</label>
-                                <label><input checked className='pet_selection_input' type="checkbox" name="dog"/> Dog</label>
-                                <label><input  className='pet_selection_input' type="checkbox" name="cat"/> Cat</label>
+                                <label>
+                                    <input 
+                                     className='pet_selection_input'
+                                     type="checkbox" 
+                                     name="dog"
+                                     checked={ checked === 'A'}
+                                     onChange={DogSwitch}
+                                     /> 
+                                    Dog
+                                </label>
+                                <label>
+                                    <input  
+                                        className='pet_selection_input' 
+                                        type="checkbox" 
+                                        name="cat"
+                                        checked={ checked === 'B'}
+                                        onChange={CatSwitch}
+                                    /> 
+                                    
+                                    Cat
+                                </label>
                             </div>
+
+                            {
+                                checked === 'A' && <FormDog/>
+                            }
+                            {
+                                checked === 'B' &&  <FormCat/>
+                            }
                             
-                            <div class="service-options">
-                                <button type="button">Boarding</button>
-                                <button type="button">House Sitting</button>
-                                <button type="button" class="active">Drop-In Visits</button>
-                                <button type="button">Doggy Day Care</button>
-                                <button type="button">Dog Walking</button>
-                            </div>
-                            
-                            <input type="text" placeholder="Zip code or Address"/>
-                            
-                            <div class="frequency">
-                                <label><input type="radio" name="frequency" checked/> One Time</label>
-                                <label><input type="radio" name="frequency"/> Repeat Weekly</label>
-                            </div>
-                            
-                            <div class="date-selection">
-                                <input type="date" placeholder="Start date"/>
-                                <input type="date" placeholder="End date"/>
-                            </div>
-                            
-                            <div class="dog-size">
-                                <button type="button">Small (0-15 lbs)</button>
-                                <button type="button">Medium (16-40 lbs)</button>
-                                <button type="button">Large (41-100 lbs)</button>
-                                <button type="button">Giant (101+ lbs)</button>
-                            </div>
-                            
-                            <button class="search-btn" type="submit">Search</button>
                         </form>
                     </div>
                 </div>

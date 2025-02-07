@@ -20,19 +20,19 @@ export const Header = () =>{
                             <li className="menu_item">
                                 <Link to={"/search"} className="Menu_link">
                                     <FontAwesomeIcon icon={faMagnifyingGlass} className="link_icon"/>
-                                    Search
+                                    Search Sitters
                                 </Link>
                             </li>
                             <li className="menu_item">
                                 <Link to={"/hazte-canguro"} className="Menu_link">
                                     <FontAwesomeIcon icon={faHeart}  className="link_icon"/>  
-                                    Became
+                                    Became a Sitters
                                 </Link>
                             </li>
                             <li className="menu_item">
                                 <Link to={"/"} className="Menu_link">
                                     <FontAwesomeIcon icon={faDog} className="link_icon"/>  
-                                    Services
+                                    Our Services
                                 </Link>
                             </li>
                         </ul>

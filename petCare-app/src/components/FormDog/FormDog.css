@@ -1,0 +1,11 @@
+
+
+.services_options{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    color: rgb(31, 33, 36);
+    
+}
